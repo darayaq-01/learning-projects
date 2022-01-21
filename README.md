@@ -1,2 +1,10 @@
 # learning-projects
-learning how to use or improve
+
+## Description
+In this repository, I add a variety of small projects that I built only for educational purposes.
+
+## Techs
+
+## Resources
+
+* Scrimba
