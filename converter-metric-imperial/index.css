@@ -1,0 +1,138 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+p,
+div,
+h1,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: auto;
+  padding: 0;
+  margin: 2em;
+}
+
+input {
+  width: 100px;
+}
+
+.common-box {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Inter';
+}
+
+.up {
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+  border-radius: 5px 5px 0 0;
+  padding: 2.3em 1em;
+  height: 40%;
+  font-style: bold;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+#output {
+  padding: 0;
+  font-size: 4em;
+  font-style: bold;
+  font-weight: 900;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5em 2em;
+  background: #1f2937;
+  border-radius: 0 0 5px 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.down > div {
+  padding: 10px;
+}
+
+/* Btn */
+
+.btns {
+  display: flex;
+}
+
+.btns > button {
+  height: 50px;
+  width: 10rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.btns > button:hover {
+  color: mix(black, red, 30%);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+#calc {
+  border-radius: 30px 0 0 30px;
+}
+
+#reset {
+  border-radius: 0 30px 30px 0 ;
+}
+
+.sections {
+  width: 80%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 1rem;
+}
+
+
+/*  INPUTS  */
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: white;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/	normalize.css">
+ 
+ <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+	<main>
+		<!-- first block -->
+		<div class="common-box up">
+			<p>Metric/Imperial unit conversion</p>
+			<h1 id="output">0
+				<h1>
+		</div>
+		<!-- end first block -->
+
+		<!-- second block -->
+		<div class="common-box down">
+
+			<!-- buttons -->
+			<div class="btns">
+				<button id="calc">Calculate</button>
+				<button id="reset">Reset</button>
+			</div>
+			<!-- end buttons -->
+
+			<!-- length -->
+			<div class="sections">
+				<h3>Length (Meter/Feet)</h3>
+				<div class="section">
+					<input type="number" id="inputLength" name="inputs" placeholder="meter/feet" max="100" value="0" />
+					<!-- choose the unit -->
+					<input type="radio" id="meter" name="inputs" value="Meter" />
+					<label for="meter">Meter</label>
+					<input type="radio" id="feet" name="inputs" value="Feet" />
+					<label for="feet">Feet</label>
+					
+				</div>
+					<p>20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+
+			</div>
+
+			<!-- volume -->
+			<div class="sections ">
+				<h3>Volume (Liters/Gallons)</h3>
+				<div class="section">
+					<input type="number" id="inputVolume" name="inputs" placeholder="Liters/Gallons" max="100" value="0" />
+					<!-- choose the unit -->
+					<input type="radio" id="liters" name="inputs" value="liters"  />
+					<label for="liters">Liters</label>
+					<input type="radio" id="gallons" name="inputs" value="gallons" />
+					<label for="gallons">Gallons</label>
+				</div>
+					<p>20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+			</div>
+
+			<!-- mass -->
+			<div class="sections ">
+				<h3>Mass (Kilograms/Pounds)</h3>
+				<div class="section">
+					<input type="number" id="inputMass" name="inputs" placeholder="Kilograms/Pounds" max="100" value="0" />
+					<!-- choose the unit -->
+					<input type="radio" id="kilograms" name="inputs" value="kilograms"  />
+					<label for="kilograms">Kilograms</label>
+					<input type="radio" id="pounds" name="inputs" value="pounds" />
+					<label for="pounds">Pounds</label>
+					
+				</div>
+				<p>20 liters = 5.284 gallons | 20 gallons = 75.708 liters</p>
+			</div>
+
+		</div>
+
+	</main>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
