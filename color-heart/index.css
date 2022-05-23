@@ -1,0 +1,89 @@
+:root {
+    --yellow: #fbf3ab;
+    --light-pink: #f0b9dd;
+    --lavender: #c7b9ff;
+    --deep-pink: #f04c86;
+    --raisin: #2b283a;
+    --white: #fff;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(139, 158, 86, 0.671);
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex * {
+    margin: 3em;
+}
+
+.wrapper {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(36, 34, 34, 0.849);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-family: inherit;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+    padding: 1em 2em;
+    color: var(--raisin);
+    background: var(--white);
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* heart styles */
+.heart {
+    background-color: var(--white);
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 100px;
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.heart:before {
+    top: -50px;
+    left: 0;
+}
+
+.heart:after {
+    left: 50px;
+    top: 0;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+
+        <title>Ramdom Password Scrimba excercise</title>
+    </head>
+    <body>
+        <body>
+            <main>
+                <header>
+                    <h1>
+                        Generate a <br />
+                        <span class="green-text">random password</span>
+                    </h1>
+                    <p>Never use an insecure password again</p>
+                </header>
+
+                <form id="pass-generator-form">
+                    <button class="generate-btn" id="generate" type="submit">
+                        Generate passwords
+                    </button>
+
+                    <hr />
+
+                    <div class="options">
+                        <div class="option">
+                            <label>Length</label>
+                            <input
+                                type="number"
+                                id="length"
+                                min="4"
+                                max="24"
+                                value="10"
+                            />
+                        </div>
+                        <div class="option">
+                            <label>Include Uppercase</label>
+                            <input type="checkbox" id="uppercase" checked />
+                        </div>
+                        <div class="option">
+                            <label>Include Numbers</label>
+                            <input type="checkbox" id="numbers" checked />
+                        </div>
+                        <div class="option">
+                            <label>Include Symbols</label>
+                            <input type="checkbox" id="symbols" checked />
+                        </div>
+                    </div>
+
+                    <hr />
+                </form>
+
+                <div class="result-wrapper">
+                    <div class="result-wrapper-col">
+                        <div class="result-display">
+                            <span id="result"></span>
+                            <button class="copy-btn-class" id="copy-btn">
+                                copy
+                            </button>
+                        </div>
+
+                        <div class="result-display">
+                            <span id="result1"></span>
+                            <button class="copy-btn-class" id="copy1-btn">
+                                copy
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="result-wrapper-col">
+                        <div class="result-display">
+                            <span id="result2"></span>
+                            <button class="copy-btn-class" id="copy2-btn">
+                                copy
+                            </button>
+                        </div>
+
+                        <div class="result-display">
+                            <span id="result3"></span>
+                            <button class="copy-btn-class" id="copy3-btn">
+                                copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <script src="index.js"></script>
+        </body>
+    </body>
+</html>

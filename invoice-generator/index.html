@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Invoice creator</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="main">
+            <header class="header">
+                <h1>Invoice Creator</h1>
+                <p>Thanks for choosing GoodCorp, LLCI</p>
+            </header>
+            <section class="invoice-data">
+                <div class="btn-wrapper">
+                    <button class="btn" id="wash-car">Wash Car: $10</button>
+                    <button class="btn" id="mow-lawn">Mow Lawn: $20</button>
+                    <button class="btn" id="pull-weeds">Pull Weeds: $30</button>
+                </div>
+                <div class="data-collect">
+                    <div class="task">
+                        <h4 class="heading-desc">Task</h4>
+                        <p class="desc">Wash Car</p>
+                        <p class="desc">Mow Lawn</p>
+                        <p class="desc">Pull Weeds</p>
+                    </div>
+                    <div class="total">
+                        <h4 class="heading-desc">Total</h4>
+                        <p>$<span class="desc wash-total"></span></p>
+                        <p>$<span class="desc mow-total"></span></p>
+                        <p>$<span class="desc pull-total"></span></p>
+                    </div>
+                </div>
+                <hr />
+                <div class="data-total">
+                    <div class="notes">
+                        <h4 class="heading-desc">Notes</h4>
+                        <p>We accept cash, credit card, or PayPal</p>
+                    </div>
+                    <div>
+                        <h4 class="heading-desc">Total Amount</h4>
+                        <span class="price-total">$0</span>
+                    </div>
+                </div>
+                <button class="btn send-invoice">Send Invoice</button>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
